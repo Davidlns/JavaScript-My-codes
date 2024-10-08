@@ -1,0 +1,18 @@
+<html>
+    <body> <button onClick="executar()">Clique Aqui</button>
+        <script>
+            executar = () => {
+                const valores = [1,6,5,9,2];
+                valores.sort(); // de forma natural, usa a ordenação de acordo com o valor em memória // inteiro fica em ordem, ponto flutuante, até mesmo texto com M ou m
+                // sort tambem pode receber parâmetros dentro do parênteses para obter outras utilidades, como comparações de idade por exemplo
+                console.log(valores);
+                console.log(`Valor na posição 3: ${valores[3]}`);
+                valores.forEach((element, index) => console.log(`Valor[${index}]:${element}`)); // forEach -> para cada elemento do vetor faça // executa a função pra todos os elementos 
+                const somaDobro = valores.map((e) => e * 2).reduce((a,b) => a + b); // .map esta aplicando a ação de multiplicar por dois, todos os elementos do vetor
+                // reduce combina pares, para realizar uma ação // vai reduzindo o vetor, pois ele soma todos os itens e elimina , transformando a lista numa soma final dos elementos
+                // map e reduce facilitam muito tarefas ligadas a pesquisas de dados
+                console.log("Soma 2x = "+somaDobro);
+            }
+        </script>
+    </body>
+</html>

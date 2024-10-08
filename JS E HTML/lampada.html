@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+    <style>
+        body
+        {
+            text-align: center;
+            background-color: rgb(46, 46, 46);
+        }
+        h2
+        {
+            -webkit-text-stroke: bold;
+            color: rgb(123, 255, 0);
+            font-size: 60px;
+            margin-top: 80px;
+        }
+
+        p
+        {
+            -webkit-text-stroke: bold;
+            color: rgb(94, 255, 0);
+            font-size: 20px;
+            margin-top: 20px
+        }
+    </style>
+</head>
+<body>
+    <h2>Acenda e apague a lampada com apenas um click</h2>
+    <p>usei um elemento para alterar valores dos atributos html.</p>
+    <p>Quando você clica em qualquer um dos botões, acontece uma alteração de imagem simples, que da a impressão de lampada acesa e apagada</p>
+
+    <button onclick="document.getElementById('lampada').src='IMG/acesa.png'">Acender</button>
+    <img id="lampada" src="IMG/apagada.png" style="width: 300px">
+    <button onclick="document.getElementById('lampada').src='IMG/apagada.png'">Apagar</button>
+</body>
+</html>

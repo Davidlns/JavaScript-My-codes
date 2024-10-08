@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h2>for...in</h2>
+        <p>Iteração nas propriedades de um objeto:</p>
+        <p id="d1"></p>
+        <script>
+            const person = {fname:"John", Iname:"Doe", age:25}; // sintaxe Json
+            let text = "";
+            
+            for(let x in person){ // para cada item da variável person, execute ........
+                text += person[x] + " "; //x é o nome do campo
+            }
+            document.getElementById("d1").innerHTML = text; //adiciona as informações colocadas na variávle text ao paragrafo de id "d1"
+        </script>
+    </body>
+</html>

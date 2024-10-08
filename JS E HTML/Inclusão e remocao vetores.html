@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script>
+
+            const valores = [3,1,7,8,4];
+
+            console.log(valores); //3,1,7,8,4
+
+            // -------------------INCLUSÃO DE VALORES NO VETOR ----------------------------------
+            valores.push(5); // adiciona um elemento no final do vetor
+            console.log(valores); //3,1,7,8,4,5
+
+            valores.unshift(6); // adiciona um elemento no começo do vetor
+            console.log(valores); //6,3,1,7,8,4,5
+
+            //-----------------------------------------------------------------------------------
+            //----------------------------REMOÇÃO DE VALORES NO VETOR ---------------------------
+
+            console.log(valores.shift()); // remove 6 do inicio
+            console.log(valores)
+
+            console.log(valores.pop()); // remove 5 do final
+            console.log(valores)
+
+            //-----------------------------------------------------------------------------------
+            // com esses elementos podemos criar estruturas do tipo listas e filas
+
+            // com push e pop , incluimos sempre um novo item ao final, e removemos sempre o ultimo item, ou seja
+            //temos uma pilha, onde o ultimo que entra é sempre o primeiro que sai
+
+            // se usar push e shift, ou pop e unshift criamos uma fila, ou seja indifere a ordem de inclusão e remoção
+            // podemos usar o as pilhas para inverter ordens, com a impressão do pop , ou seja colocando os ultimos valores como primeiros
+            // invertendo assim a ordem da pilha
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <table style="width: 100%;">
+
+            <script>
+                const cores = ["red", "green", "blue"];
+                for(let i = 1; i < 10; i++){ // garante que sejam criadas uma quantidade de linhas especificadas no for, nesse caso 9 linhas de 1 a 9, pois foi colocado < 10 e não <=
+                    document.write("<tr>"); // abre a linha a quantidade de vezes que rodar o for
+                    for(let j=1; j < 10; j++){ //cria 9 celulas ou colunas na linha com cores aleatórias
+                        let pos = Math.trunc(Math.random()*3); // math.random, retorna um numero entre 0 e 1, multiplicando por 3 ele retorna um numero entre 0 e 3, que nunca chega a 3, trunc garante 
+                        // que tire a parte quebrada. 0, 1 ou 2, para cada cor da lista, seguindo o conceito de indice e aplicando a seleção  randomica de cada uma.
+                        document.write(`<td style='background-color:${cores[pos]}'>&nbsp;</td>`); // gera uma abertura de coluna onde atribui um comando style para deixar a cor de fundo com uma das cores da lista
+                        // usa a variável pos, que nesse caso gera os numeros aleatórios para escolher a cor da lista e preencher assim o comando background-color....
+                    }
+                    document.write("</tr>"); //fecha a linha
+                }
+            </script>
+
+        </table>
+    </body>
+</html>

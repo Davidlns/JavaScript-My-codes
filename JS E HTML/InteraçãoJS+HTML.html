@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo utilização de JS</title>
+    </head>
+    <body>
+        <div id="d1">Conteúdo Original!</div>
+        <button onClick="alterar()">Clique Aqui</button>
+
+        <script>
+            const alterar = () => {let d1 = document.getElementById("d1");
+                d1.innerHTML = "Conteudo Alterado!";
+                d1.style.backgroundColor="yellow", color="red";
+            }
+        </script>
+    </body>
+</html>

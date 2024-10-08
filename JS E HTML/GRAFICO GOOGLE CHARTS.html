@@ -1,0 +1,43 @@
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <!-- Importa a Biblioteca que gera o gráfico google charts-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--BOOTSTRAP-->
+</head>
+<body class="container">
+    <h1 style="margin-top: 20%;">Google Charts</h1>
+
+    <form class="form-m2">
+        <label class="form-label">Valor de X</label>
+        <input class="form-control" type="number" id="v1"/>
+
+        <a class="btn btn-primary m-2" href="#" onclick="executar()">Executar</a>
+    </form>
+
+
+    <div id="chart_div"></div>
+    <div class="alert alert-warning" id="media"></div>
+
+    <script src="googlechartjs.js"></script>
+    
+    <script>
+
+        const executar = () => {
+
+            const x = eval(document.getElementById("v1").value);
+            addValor(x);
+
+            // ----------------------------------------------------------Desenhando Gráfico----------------------------------------------------------------
+
+            google.charts.load('current', {packages:['corechart', 'line']}); // carrega do pacote do google charts o gráfico do tipo linha
+            google.charts.setOnLoadCallback(drawBasic); // manda executar o drawBasic quando carregar // funcao que desenha o gráfico no arquivo externo js
+
+            // ----------------------------------------------------------Mostrando a Media-----------------------------------------------------------------
+
+            document.getElementById("media").innerHTML = `Media: ${media()}`; // apresenta o retorno da funcao media na div de id media
+
+        }
+
+    </script>
+</body>
+</html>

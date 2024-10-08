@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <body>
+        <h2>Iteração nos elementos de um vetor:</h2>
+        <p id="d1"></p>
+
+        <script>
+            const cars = ["BMW","Volvo","Saab","Ford"];
+            let text = "";
+            for (let x in cars){  // uso do for in
+                text += cars[x] + " "; // x é o índice ou posição no vetor
+            }
+            //for (let x of cars){ //uso do for of
+            //text += cars[x] + " "; // x é o elemento // deve ser sempre em elementos como o vetor // vai de objeto em objeto // bom para tratamentos que envolve toda a coleção
+            //}
+            document.getElementById("d1").innerHTML = text;
+        </script>
+    </body>
+</html>

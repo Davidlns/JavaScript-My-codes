@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+            const bubble = (v) => {
+                let ordenado = false; // assume que não está ordenado
+                while(!ordenado){ // enquanto não estiver ordenado
+                    ordenado = true; // assume que está ordenado // 
+                    for (let i = 1; i < v.length; i++) // não começamos do 0, pois sempre vamos comparar um par de valores, usando as posições
+                        if(v[i - 1] > v[i]) { // pergunta se o maior esta vindo primeiro // queremos que o menor venha primeiro, para organizar em ordem crescente
+                            const aux = v[i]; 
+                            v[i] = v[i-1]; // ordena a posição para a ordem certa
+                            v[i-1] = aux; 
+                            ordenado = false; // se acontecer a troca, assume que não está ordenado e volta a while
+                        }
+                }
+            }
+            const valores = [3,1,7,8,4]; //cria uma lista
+            console.log(valores); // apresenta a lista no console do jeito que foi criada
+            bubble(valores); // aplica a função para ordenar a lista 
+            console.log(valores); // apresenta a lista no console depois de ordenada
+
+        </script>
+    </body>
+</html>

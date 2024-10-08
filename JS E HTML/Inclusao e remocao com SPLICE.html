@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            // PARÂMETROS: posição, quantidade a ser removida, conteúdo novo
+            // Diferente do comando delete, que apenas indefine e não remove o elemento do vetor
+
+            const vetor = [1,2,3,4,5,6,7];
+            console.log(vetor); //1,2,3,4,5,6,7
+
+            vetor.splice(2,3); //apartir da posição 2, remova 3 elementos
+            console.log(vetor); //1,2,6,7 // tira o 3,4,5
+
+            vetor.splice(2,0,"X","X") // apartir da posição 2, remova 0 elementos e adicione "X" e "X" // o primeiro X entra na posição 2
+            console.log(vetor); //1,2,X,X,6,7
+
+            //vetor.splice(2,1,"X","X") nesse caso teriamos a remoção do numero 6 e a inclusão dos dois X
+
+            //splice é mais eficiente pois aq, podemos escolher o indice específico que queremos remover, adicionar ou substituir
+            // em outros casos só é possível, remover ou incluir, no começo ou final do vetor, sendo menos eficiente para indices específicos
+
+        </script>
+    </body>
+</html>
