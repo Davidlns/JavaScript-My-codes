@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+     <nota_fiscal>
+
+             <numero>213456</numero>
+             <data_pedido>2023-01-01</data_pedido>
+             <cliente>David</cliente>
+
+             <itens>
+                   <item ordem="1">
+                         <produto>Produto 1</produto>
+                         <quantidade>1</quantidade>
+                         <valor>100.00</valor>
+                   </item>
+
+                   <item ordem="2">
+                         <produto>Produto 2</produto>
+                         <quantidade>2</quantidade>
+                         <valor>50.00</valor>
+                   </item>
+
+                   <item ordem="3">
+                         <produto>Produto 3</produto>
+                         <quantidade>5</quantidade>
+                         <valor>5.00</valor>
+                   </item>
+
+             </itens>
+
+     </nota_fiscal>

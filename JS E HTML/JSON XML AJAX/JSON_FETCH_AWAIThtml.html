@@ -1,0 +1,17 @@
+<html>
+    <body class="container">
+        <h1 style="margin-top: 50px;">API de Testes randomusers</h1>
+        <a class="btn btn-primary" href="#" onclick="executar()">Executar</a>
+        <ul id="retorno" style="margin-top: 10px;"></ul> <!--Lista que vai receber os itens dos dados json-->
+
+        <script src="JSON_fetch_await.js"></script> <!--Chamando o arquivo js externo-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <script>
+            const executar = () => { // criando a função executar citada na tag a
+                getUsers("retorno"); // executa a função do js externo recebendo a lista vazia de id "retorno"
+            }
+        </script>
+
+    </body>
+</html>

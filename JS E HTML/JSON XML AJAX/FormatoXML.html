@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = () => {
+                const xmlDoc = this.responseXML; // carrega a resposta no formato xml
+                const x = xmlDoc.getElementByTagName("ARTIST"); // pega todas as tags ARTIST do xml
+                let txt = "";
+                for (let i = 0; i < x.length; i++) // para cada elemento encontrado
+                    txt = txt + x[i].childNodes[0].nodeValue + "<br>" // é como pegaria o nome dos artistas
+                document.getElementById("demo").innerHTML = txt;
+            }
+
+            xhttp.open("GET","cd_catalog.xml");
+            xhttp.send();
+        </script>
+    </body>
+</html>
