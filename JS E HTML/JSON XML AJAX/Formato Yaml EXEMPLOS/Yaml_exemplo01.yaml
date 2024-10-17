@@ -1,0 +1,71 @@
+- id: 1
+  nome: "Alice"
+  email: "alice@example.com"
+  idade: 30
+  endereco:
+    rua: "Rua das Flores"
+    numero: 123
+    cidade: "São Paulo"
+    estado: "SP"
+    cep: "01001-000"
+  telefone: "11-1234-5678"
+
+- id: 2
+  nome: "Bob"
+  email: "bob@example.com"
+  idade: 25
+  endereco:
+    rua: "Avenida Paulista"
+    numero: 456
+    cidade: "São Paulo"
+    estado: "SP"
+    cep: "01310-000"
+  telefone: "11-2345-6789"
+
+- id: 3
+  nome: "Charlie"
+  email: "charlie@example.com"
+  idade: 28
+  endereco:
+    rua: "Rua Augusta"
+    numero: 789
+    cidade: "São Paulo"
+    estado: "SP"
+    cep: "01305-000"
+  telefone: "11-3456-7890"
+
+- id: 4
+  nome: "Diana"
+  email: "diana@example.com"
+  idade: 32
+  endereco:
+    rua: "Rua da Consolação"
+    numero: 101
+    cidade: "São Paulo"
+    estado: "SP"
+    cep: "01302-000"
+  telefone: "11-4567-8901"
+
+- id: 5
+  nome: "Evan"
+  email: "evan@example.com"
+  idade: 27
+  endereco:
+    rua: "Rua Bela Cintra"
+    numero: 202
+    cidade: "São Paulo"
+    estado: "SP"
+    cep: "01415-000"
+  telefone: "11-5678-9012"
+
+- id: 6
+  nome: "Fiona"
+  email: "fiona@example.com"
+  idade: 29
+  endereco:
+    rua: "Rua Haddock Lobo"
+    numero: 303
+    cidade: "São Paulo"
+    estado: "SP"
+    cep: "01414-000"
+  telefone: "11-6789-0123"

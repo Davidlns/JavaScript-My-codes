@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sistemaGerenciamentoPedidos>
+    <loja>
+        <nome>Loja Exemplo</nome>
+        <endereco>
+            <rua>Rua Central</rua>
+            <numero>123</numero>
+            <cidade>Cidade Exemplo</cidade>
+            <estado>EX</estado>
+            <cep>12345-678</cep>
+        </endereco>
+        <telefone>55-11-98765-4321</telefone>
+    </loja>
+    <clientes>
+        <cliente id="1">
+            <nome>Alice</nome>
+            <email>alice@example.com</email>
+            <telefone>11-1234-5678</telefone>
+            <endereco>
+                <rua>Rua das Flores</rua>
+                <numero>123</numero>
+                <cidade>São Paulo</cidade>
+                <estado>SP</estado>
+                <cep>01001-000</cep>
+            </endereco>
+        </cliente>
+        <cliente id="2">
+            <nome>Bob</nome>
+            <email>bob@example.com</email>
+            <telefone>11-2345-6789</telefone>
+            <endereco>
+                <rua>Avenida Paulista</rua>
+                <numero>456</numero>
+                <cidade>São Paulo</cidade>
+                <estado>SP</estado>
+                <cep>01310-000</cep>
+            </endereco>
+        </cliente>
+    </clientes>
+    <pedidos>
+        <pedido id="1001">
+            <data>2024-01-15</data>
+            <clienteId>1</clienteId>
+            <itens>
+                <item>
+                    <produtoId>2001</produtoId>
+                    <nomeProduto>Notebook XYZ</nomeProduto>
+                    <quantidade>1</quantidade>
+                    <preco>3500.00</preco>
+                </item>
+                <item>
+                    <produtoId>2002</produtoId>
+                    <nomeProduto>Mouse ABC</nomeProduto>
+                    <quantidade>2</quantidade>
+                    <preco>150.00</preco>
+                </item>
+            </itens>
+            <envio>
+                <metodo>Correios</metodo>
+                <prazoEntrega>2024-01-22</prazoEntrega>
+                <custoEnvio>50.00</custoEnvio>
+                <endereco>
+                    <rua>Rua das Flores</rua>
+                    <numero>123</numero>
+                    <cidade>São Paulo</cidade>
+                    <estado>SP</estado>
+                    <cep>01001-000</cep>
+                </endereco>
+            </envio>
+        </pedido>
+        <pedido id="1002">
+            <data>2024-01-20</data>
+            <clienteId>2</clienteId>
+            <itens>
+                <item>
+                    <produtoId>2003</produtoId>
+                    <nomeProduto>Teclado DEF</nomeProduto>
+                    <quantidade>1</quantidade>
+                    <preco>250.00</preco>
+                </item>
+            </itens>
+            <envio>
+                <metodo>Transportadora XYZ</metodo>
+                <prazoEntrega>2024-01-25</prazoEntrega>
+                <custoEnvio>30.00</custoEnvio>
+                <endereco>
+                    <rua>Avenida Paulista</rua>
+                    <numero>456</numero>
+                    <cidade>São Paulo</cidade>
+                    <estado>SP</estado>
+                    <cep>01310-000</cep>
+                </endereco>
+            </envio>
+        </pedido>
+    </pedidos>
+</sistemaGerenciamentoPedidos>

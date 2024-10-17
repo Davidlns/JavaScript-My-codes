@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <table id="container">
+
+    </table>
+</body>
+    <script type="text/javascript">
+
+        window.onload = (event) => { //assim que a página carregar chame o método loadXmlDoc()
+            loadXmlDoc();
+        };
+
+        function loadXmlDoc () { 
+            var xhttp = new XMLHttpRequest(); //recupera o xml
+            xhttp.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200) { // em caso de sucesso
+                        parseXML(this); // todo o retorno que volta do objeto, esta sendo passado pro método
+                    }
+            };
+
+            xhtto.open("GET", "cd_catalog.xml", true);
+            xhttp.send();
+        }
+
+        function parseXML(xml) {
+            var i;
+            var xmlDoc = xml.responseXML; // xml tem um objeto chamado responseXML // xmlhttprequest possui um tipo de resposta específico para documentos de formato XML// xmlDOC passa ter o conteudo do arquivo
+            var table = "<tr><th>Title</th><th>Artist</th></tr>"; // contem o cabeçalho da tabela html
+            var x = xmlDoc.getElementsByTagName("CD"); // atribui a variável x tudo que está dentro do nó de name CD // serve para recuperar um dado do arquivo atravéz da tagname do mesmo
+            for (i = 0; i < x.length; i++) { // percorre o array retornado na variável x
+                table += "<tr><td>" +  //pega o conteudo que ja tem em table e concatena com mais esse texto
+                x[i].getElementsByTagName("TITLE") [0].childNodes[0].nodeValue +  // pega os elementos do no title // é necessário informar o indice mesmo que tenha apenas um elemento // nodeValue pega o valor
+                "</td><td>" + // fecha uma coluna e abre outra
+                x[i].getElementsByTagName("ARTIST") [0].childNodes[0].nodeValue + // faz o mesmo, porem dessa vez com o nó ARTIST
+                "</td></tr>"; // fecha a coluna e a linha
+            }
+            document.getElementById("container").innerHTML = table; // adiciona a tabela, ao elemento html identificado pelo id container
+        }
+    </script>
+</html>

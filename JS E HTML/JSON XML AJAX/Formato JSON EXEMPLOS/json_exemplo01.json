@@ -1,0 +1,44 @@
+{
+    "veiculos":{
+        "carros":{
+            "palio":{
+                "cor":"amarelo",
+                "ano":"1985",
+                "placa":"PLT-2567",
+                "valor":"15.000"
+            },
+            "Uno":{
+                "cor":"branco",
+                "ano":"2002",
+                "placa":"OXG-1972",
+                "valor":"20.000"
+            },
+            "Civic":{
+                "cor":"preto",
+                "ano":"2008",
+                "placa":"HKJ-1038",
+                "valor":"39.000"
+            }
+        },
+        "Motos":{
+            "Hotnet":{
+                "cor":"Dourado",
+                "ano":"2013",
+                "placa":"JHN-1256",
+                "valor":"24.000"
+            },
+            "Bross":{
+                "cor":"vermelho",
+                "ano":"2024",
+                "placa":"SEM PLACA",
+                "valor":"21.400"
+            },
+            "Fazer":{
+                "cor":"azul",
+                "ano":"2023",
+                "placa":"PKF-9870",
+                "valor":"16.800"
+            }
+        }
+    }
+}

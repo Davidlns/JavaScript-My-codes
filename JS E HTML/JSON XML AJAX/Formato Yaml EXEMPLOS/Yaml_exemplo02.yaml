@@ -1,0 +1,74 @@
+sistemaGerenciamentoProjetos:
+  nome: "Gerenciador de Projetos X"
+  descricao: "Uma plataforma para gerenciar projetos de forma eficiente"
+  projetos:
+    - id: 101
+      nome: "Desenvolvimento de Aplicativo Mobile"
+      descricao: "Criação de um aplicativo móvel multiplataforma"
+      prazo: "2024-12-31"
+      status: "Em Progresso"
+      equipe:
+        - nome: "Ana"
+          cargo: "Gerente de Projeto"
+          email: "ana@example.com"
+        - nome: "Carlos"
+          cargo: "Desenvolvedor"
+          email: "carlos@example.com"
+        - nome: "Maria"
+          cargo: "Designer"
+          email: "maria@example.com"
+      tarefas:
+        - id: 1
+          titulo: "Definição de Requisitos"
+          responsavel: "Ana"
+          prazo: "2024-01-15"
+          status: "Concluída"
+        - id: 2
+          titulo: "Desenvolvimento do Backend"
+          responsavel: "Carlos"
+          prazo: "2024-05-30"
+          status: "Em Progresso"
+        - id: 3
+          titulo: "Design de Interface"
+          responsavel: "Maria"
+          prazo: "2024-03-20"
+          status: "Concluída"
+    - id: 102
+      nome: "Rebranding do Site Corporativo"
+      descricao: "Atualização da identidade visual e design do site da empresa"
+      prazo: "2024-08-15"
+      status: "Planejado"
+      equipe:
+        - nome: "Pedro"
+          cargo: "Gerente de Marketing"
+          email: "pedro@example.com"
+        - nome: "Lucas"
+          cargo: "Desenvolvedor Web"
+          email: "lucas@example.com"
+        - nome: "Fernanda"
+          cargo: "Designer"
+          email: "fernanda@example.com"
+      tarefas:
+        - id: 1
+          titulo: "Pesquisa de Mercado"
+          responsavel: "Pedro"
+          prazo: "2024-02-10"
+          status: "Planejado"
+        - id: 2
+          titulo: "Desenvolvimento do Novo Layout"
+          responsavel: "Lucas"
+          prazo: "2024-06-01"
+          status: "Planejado"
+        - id: 3
+          titulo: "Criação do Guia de Estilo"
+          responsavel: "Fernanda"
+          prazo: "2024-04-20"
+          status: "Planejado"
+
+configuracoes:
+  notificacoes:
+    email: true
+    sms: false
+  integracoes:
+    trello: true
+    slack: false
